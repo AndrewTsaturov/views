@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.drawingapp.MainActivity"
+    android:weightSum="1">
+
+<com.example.drawingapp.MyView
+    android:layout_width="128dp"
+    android:layout_height="128dp"
+    app:innerPadding="4dp"/>
+<com.example.drawingapp.RoundedImageView
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:src="@drawable/myphoto"
+    android:scaleType="centerCrop"/>
+
+</LinearLayout>
