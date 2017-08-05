@@ -12,10 +12,12 @@
     android:layout_width="128dp"
     android:layout_height="128dp"
     app:innerPadding="4dp"/>
-<com.example.drawingapp.RoundedImageView
-    android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    android:src="@drawable/myphoto"
-    android:scaleType="centerCrop"/>
+
+    <com.example.drawingapp.RoundedImageView
+        android:id="@+id/roundedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/myphoto" />
 
 </LinearLayout>
