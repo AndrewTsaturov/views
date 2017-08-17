@@ -71,8 +71,25 @@ public class MainActivity extends AppCompatActivity {
         anim.start();
     }
 
-    private void animation(ImageView show, Animation animation){
+    private void animation(final ImageView show, Animation animation){
        show.setBackgroundResource(R.drawable.anim_one);
        show.startAnimation(animation);
+
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                show.startAnimation(animation);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
     }
 }
