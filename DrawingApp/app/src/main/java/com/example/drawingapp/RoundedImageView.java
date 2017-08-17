@@ -48,9 +48,9 @@ public class RoundedImageView extends android.support.v7.widget.AppCompatImageVi
         super.onLayout(changed, left, top, right, bottom);
 
         View view = getRootView();
-        Drawable backgroung = view.getBackground();
-        if(backgroung instanceof ColorDrawable)
-            color = ((ColorDrawable) backgroung).getColor();
+        Drawable background = view.getBackground();
+        if(background instanceof ColorDrawable)
+            color = ((ColorDrawable) background).getColor();
         paintFill.setColor(color);
     }
 

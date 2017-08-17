@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,16 +7,17 @@
     tools:context="com.example.drawingapp.MainActivity"
     android:weightSum="1">
 
-<com.example.drawingapp.MyView
-    android:layout_width="128dp"
-    android:layout_height="128dp"
-    app:innerPadding="4dp"/>
+<android.support.v7.widget.AppCompatSpinner
+    android:id="@+id/spinner_animation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="0dp" />
 
-    <com.example.drawingapp.RoundedImageView
-        android:id="@+id/roundedImageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/myphoto" />
-
-</LinearLayout>
+    <ImageView
+        android:id="@+id/anim_show"
+        android:layout_width="201dp"
+        android:layout_height="194dp"
+        android:src="@drawable/anim_one"
+        tools:layout_editor_absoluteY="129dp"
+        tools:layout_editor_absoluteX="60dp" />
+</android.support.constraint.ConstraintLayout>
