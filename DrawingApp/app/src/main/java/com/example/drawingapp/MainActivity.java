@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         Spinner spinnerAnim = (Spinner) findViewById(R.id.spinner_animation);
 
-        final ImageView showAnim = (ImageView) findViewById(R.id.anim_show);
+        final RoundedImageView showAnim = (RoundedImageView) findViewById(R.id.anim_show);
 
         String[] spinnerValues = this.getResources().getStringArray(R.array.spinner_items);
 
@@ -65,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void animation(ImageView show){
+    private void animation(RoundedImageView show){
         show.setBackgroundResource(R.drawable.cock_anim);
         AnimationDrawable anim = (AnimationDrawable) show.getBackground();
         anim.start();
     }
 
-    private void animation(final ImageView show, Animation animation){
+    private void animation(final RoundedImageView show, Animation animation){
        show.setBackgroundResource(R.drawable.anim_one);
        show.startAnimation(animation);
 

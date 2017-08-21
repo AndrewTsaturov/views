@@ -13,12 +13,14 @@
     android:layout_height="wrap_content"
     tools:layout_editor_absoluteX="0dp" />
 
-    <ImageView
+    <com.example.drawingapp.RoundedImageView
+        android:scaleType="centerInside"
         android:id="@+id/anim_show"
-        android:layout_width="201dp"
-        android:layout_height="194dp"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
         tools:layout_editor_absoluteY="129dp"
         tools:layout_editor_absoluteX="60dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
