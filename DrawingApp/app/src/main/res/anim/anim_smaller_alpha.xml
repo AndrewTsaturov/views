@@ -11,9 +11,9 @@
     android:startOffset="100"
 />
     <alpha
-        android:startOffset="3000"
+        android:startOffset="100"
         android:fromAlpha="1.0"
-        android:toAlpha="0.25"
-        android:duration="250"
+        android:toAlpha="0"
+        android:duration="3000"
         />
 </set>

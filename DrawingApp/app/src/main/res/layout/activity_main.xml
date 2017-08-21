@@ -9,18 +9,24 @@
 
 <android.support.v7.widget.AppCompatSpinner
     android:id="@+id/spinner_animation"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    tools:layout_editor_absoluteX="0dp" />
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
-    <com.example.drawingapp.RoundedImageView
-        android:scaleType="centerInside"
-        android:id="@+id/anim_show"
-        android:layout_width="192dp"
-        android:layout_height="192dp"
-        tools:layout_editor_absoluteY="129dp"
-        tools:layout_editor_absoluteX="60dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_below="@id/spinner_animation"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+            <com.example.drawingapp.RoundedImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/anim_show"
+                android:layout_width="192dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center|center_vertical"
+                android:scaleType="centerInside" />
+
+        </RelativeLayout>
 
 </RelativeLayout>

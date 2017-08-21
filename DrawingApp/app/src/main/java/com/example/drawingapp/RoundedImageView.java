@@ -51,8 +51,6 @@ public class RoundedImageView extends ImageView {
         width = getMeasuredWidth();
         heigth = getMeasuredHeight();
         orientation = albumOrientation();
-
-
     }
 
     @Override
@@ -105,7 +103,6 @@ public class RoundedImageView extends ImageView {
             path.lineTo(0, 0);
         }
         canvas.drawPath(path, paintFill);
-        Log.d("image view", "drawing circle");
     }
 
     private boolean albumOrientation(){

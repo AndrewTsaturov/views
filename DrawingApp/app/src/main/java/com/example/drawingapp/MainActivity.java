@@ -40,38 +40,38 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        animation(showAnim);
+                        makeAnimation(showAnim);
                         break;
                     case 1:
                         animationType = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_enlarge);
-                        animation(showAnim, animationType);
+                        makeAnimation(showAnim, animationType);
                         break;
                     case 2:
                         animationType = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_smaller);
-                        animation(showAnim, animationType);
+                        makeAnimation(showAnim, animationType);
                         break;
                     case 3:
                         animationType = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_smaller_alpha);
-                        animation(showAnim, animationType);
+                        makeAnimation(showAnim, animationType);
                         break;
                 }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-             animation(showAnim);
+             makeAnimation(showAnim);
             }
         });
     }
 
 
-    private void animation(RoundedImageView show){
+    private void makeAnimation(RoundedImageView show){
         show.setBackgroundResource(R.drawable.cock_anim);
         AnimationDrawable anim = (AnimationDrawable) show.getBackground();
         anim.start();
     }
 
-    private void animation(final RoundedImageView show, Animation animation){
+    private void makeAnimation(final RoundedImageView show, Animation animation){
        show.setBackgroundResource(R.drawable.anim_one);
        show.startAnimation(animation);
 
